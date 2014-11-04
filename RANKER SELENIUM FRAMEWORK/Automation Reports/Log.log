@@ -1,0 +1,35 @@
+<font face='trendy' color= 'LimeGreen' size='3.5'> - <h2>--------------------SuiteRunner Log-------------------------<h2>
+ - beforeSuite - BaseSetup - INFO - 03-11-2014 23:29:42 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Browser name present in config file :firefox
+ - initiateDriver - BaseSetup - INFO - 03-11-2014 23:29:42 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - -----------------STARTED RUNNING SELENIUM TESTS ON LOCAL MACHINE------------------
+ - initiateDriver - BaseSetup - INFO - 03-11-2014 23:29:42 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Launching firefox with a new profile
+ - init - FirefoxBrowser - INFO - 03-11-2014 23:29:42 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - what driver is running? firefox
+ - initiateDriver - BaseSetup - INFO - 03-11-2014 23:29:54 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Initiated Webdriver...
+ - initializeBaseSetup - BaseSetup - INFO - 03-11-2014 23:29:54 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Before navigating to url printing the browser associated capabilities :http://www.ranker-qa.com
+ - beforeNavigateTo - WebListener - INFO - 03-11-2014 23:29:54 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - WebDriver has navigated to:'http://www.ranker-qa.com'
+ - afterNavigateTo - WebListener - INFO - 03-11-2014 23:29:56 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Waiting for presence of element By.name: uname
+ - isElementPresent - Sync - INFO - 03-11-2014 23:29:56 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Element By.name: uname is displayed
+ - isElementPresent - Sync - INFO - 03-11-2014 23:29:56 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Value of the: name: uname before any changes made
+ - beforeChangeValueOf - WebListener - INFO - 03-11-2014 23:29:56 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Value of element after change:  name: uname
+ - afterChangeValueOf - WebListener - INFO - 03-11-2014 23:29:57 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Waiting for presence of element By.name: pass
+ - isElementPresent - Sync - INFO - 03-11-2014 23:29:57 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Element By.name: pass is displayed
+ - isElementPresent - Sync - INFO - 03-11-2014 23:29:57 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Value of the: name: pass before any changes made
+ - beforeChangeValueOf - WebListener - INFO - 03-11-2014 23:29:58 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Value of element after change:  name: pass
+ - afterChangeValueOf - WebListener - INFO - 03-11-2014 23:29:58 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Waiting until element By.xpath: //input[@value='Submit'] is clickable
+ - waitUntilClickable - Sync - INFO - 03-11-2014 23:29:58 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Element By.xpath: //input[@value='Submit'] is displayed and is clickable
+ - waitUntilClickable - Sync - INFO - 03-11-2014 23:29:58 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Trying to click on:  xpath: //input[@value='Submit']
+ - beforeClickOn - WebListener - INFO - 03-11-2014 23:29:58 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Clicked on:  xpath: //input[@value='Submit']
+ - afterClickOn - WebListener - INFO - 03-11-2014 23:30:23 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Clicked on the element By.xpath: //input[@value='Submit']
+ - safeClick - SafeActions - INFO - 03-11-2014 23:30:23 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Waiting until element By.id: nav_people is clickable
+ - waitUntilClickable - Sync - INFO - 03-11-2014 23:30:23 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Element By.id: nav_people is displayed and is clickable
+ - waitUntilClickable - Sync - INFO - 03-11-2014 23:30:24 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Trying to click on:  id: nav_people
+ - beforeClickOn - WebListener - INFO - 03-11-2014 23:30:24 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Clicked on:  id: nav_people
+ - afterClickOn - WebListener - INFO - 03-11-2014 23:30:24 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Clicked on the element By.id: nav_people
+ - safeClick - SafeActions - INFO - 03-11-2014 23:30:24 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Waiting for presence of element By.xpath: //a[@id='logo']
+ - isElementPresent - Sync - INFO - 03-11-2014 23:30:24 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Waiting until element By.id: nav_recent is clickable
+ - waitUntilClickable - Sync - INFO - 03-11-2014 23:30:39 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Element By.id: nav_recent is displayed and is clickable
+ - waitUntilClickable - Sync - INFO - 03-11-2014 23:30:40 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Trying to click on:  id: nav_recent
+ - beforeClickOn - WebListener - INFO - 03-11-2014 23:30:40 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Clicked on:  id: nav_recent
+ - afterClickOn - WebListener - INFO - 03-11-2014 23:30:40 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Clicked on the element By.id: nav_recent
+ - safeClick - SafeActions - INFO - 03-11-2014 23:30:40 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - Waiting for presence of element By.xpath: //a[@id='logo']
+ - isElementPresent - Sync - INFO - 03-11-2014 23:30:40 </font><br><font face='trendy' color= 'LimeGreen' size='3.5'> - after suite
+ - AddLogFileToReport - BaseSetup - INFO - 03-11-2014 23:30:53 </font><br>
