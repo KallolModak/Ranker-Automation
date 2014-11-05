@@ -13,7 +13,8 @@ public class AuthLoginPage extends SafeActions{
 	
 	public AuthLoginPage(WebDriver driver) {
 		super(driver);
-		config=new ConfigManager();
+		this.driver=driver;
+//		config=new ConfigManager();
 	}
 	
 	private By submitBth(){

@@ -15,7 +15,7 @@ public class Signin extends BaseSetup{
 	SigninPage signpg;
 	
 	@BeforeMethod
-	public void msthodSetup(){
+	public void methodSetup(){
 		AuthLoginPage authlpg=new AuthLoginPage(getDriver());
 		getDriver().get(new ConfigManager().getProperty("Url"));
 		authlpg.enterCredentels("rankeRtesT", "r@nk3r!");
@@ -26,7 +26,7 @@ public class Signin extends BaseSetup{
 //		signpg=new SigninPage(getDriver());
 //		Assert.assertTrue(signpg.verifyLoginPage(),"verify homepage");
 		signpg.clickSignin();
-		signpg.enterCredentels("rankeRtesT","r@nk3r!");
+		signpg.enterCredentels("ramnavuluri","bhanu1071");
 		HomePage hmpge=signpg.clickSubmit();
 		//verify login
 		}

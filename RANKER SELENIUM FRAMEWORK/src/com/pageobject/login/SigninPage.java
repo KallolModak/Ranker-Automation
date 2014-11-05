@@ -14,11 +14,12 @@ public class SigninPage extends SafeActions{
 	
 	public SigninPage(WebDriver driver) {
 		super(driver);
+		this.driver=driver;
 		config=new ConfigManager();
 	}
 	
 	private By signIn(){
-		return By.id("navLogin");
+		return By.xpath("//span[text()='sign in']");
 	}
 	
 	private By loginUser(){
