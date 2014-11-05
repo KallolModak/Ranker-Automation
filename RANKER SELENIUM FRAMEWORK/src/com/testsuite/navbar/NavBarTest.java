@@ -19,7 +19,7 @@ public class NavBarTest extends BaseSetup{
 	public void classSetUp(){
 		AuthLoginPage authlpg=new AuthLoginPage(getDriver());
 		getDriver().get(new ConfigManager().getProperty("Url"));
-		authlpg.enterCredentels("rankeRtesT", "r@nk3r!");
+		authlpg.enterCredentels(config.getProperty("Authuname"), config.getProperty("Authpwd"));
 		authlpg.clickSubmit();
 	}
 	@Test(priority=1)
