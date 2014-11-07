@@ -2,6 +2,7 @@ package com.testsuite.navbar;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.base.BaseSetup;
@@ -22,6 +23,10 @@ public class NavBarTest extends BaseSetup{
 		getDriver().get(new ConfigManager().getProperty("Url"));
 		authlpg.enterCredentels(config.getProperty("Authuname"), config.getProperty("Authpwd"));
 		authlpg.clickSubmit();
+	}
+	@BeforeMethod
+	public void beforeMethod(){
+		getDriver().get(new ConfigManager().getProperty("Url"));
 	}
 	@Test(priority=1)
 	public void Ranker_logo(){

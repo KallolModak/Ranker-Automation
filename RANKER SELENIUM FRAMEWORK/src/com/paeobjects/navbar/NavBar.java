@@ -33,7 +33,7 @@ public class NavBar extends Commonpage{
 	}
 	
 	private By tv(){
-		return By.xpath("nav_tv");
+		return By.id("nav_tv");
 	}
 	
 	private By music(){
