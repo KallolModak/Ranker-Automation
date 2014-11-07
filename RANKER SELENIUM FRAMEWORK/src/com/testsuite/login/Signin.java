@@ -1,4 +1,4 @@
-package com.TestLogin;
+package com.testsuite.login;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

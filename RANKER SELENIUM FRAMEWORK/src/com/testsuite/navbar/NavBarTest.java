@@ -26,6 +26,7 @@ public class NavBarTest extends BaseSetup{
 	}
 	@BeforeMethod
 	public void beforeMethod(){
+		if(!getDriver().getCurrentUrl().equals(new ConfigManager().getProperty("Url")))
 		getDriver().get(new ConfigManager().getProperty("Url"));
 	}
 	@Test(priority=1)

@@ -92,10 +92,11 @@ public class BaseSetup implements TimeOuts
      */
     @Parameters("browserType")
     @BeforeClass (alwaysRun=true)
-	public void initializeBaseSetup(@Optional("firefox") String browserType,ITestContext context)
+	public void initializeBaseSetup(@Optional() String browserType,ITestContext context)
 	{
     	try
     	{
+    		browserType=sys.getProperty("Browser.Name");
 	    	initiateDriver(browserType);
 	    	log.info("Initiated Webdriver...");
 	    	context.setAttribute("driver", driver);		
