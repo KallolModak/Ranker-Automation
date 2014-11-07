@@ -24,8 +24,6 @@ public class Signin extends BaseSetup{
 	}
 	@Test(priority=1,groups={"smoke"})
 	public void logInITest() throws Exception{
-//		signpg=new SigninPage(getDriver());
-//		Assert.assertTrue(signpg.verifyLoginPage(),"verify homepage");
 		signpg.clickSignin();
 		signpg.enterCredentels("ramnavuluri","bhanu1071");
 		HomePage hmpge=signpg.clickSubmit();
