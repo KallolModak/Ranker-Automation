@@ -17,6 +17,7 @@ public class NavBarTest extends BaseSetup{
 	
 	@BeforeClass
 	public void classSetUp(){
+		
 		AuthLoginPage authlpg=new AuthLoginPage(getDriver());
 		getDriver().get(new ConfigManager().getProperty("Url"));
 		authlpg.enterCredentels(config.getProperty("Authuname"), config.getProperty("Authpwd"));
