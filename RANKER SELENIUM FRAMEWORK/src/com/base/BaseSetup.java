@@ -111,7 +111,6 @@ public class BaseSetup implements TimeOuts
 	}
 
 
-
     /**
      * Purpose - to initiate driver based on the browser
      * @return - driver

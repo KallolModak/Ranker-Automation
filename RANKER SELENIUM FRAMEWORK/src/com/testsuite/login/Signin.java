@@ -1,5 +1,6 @@
 package com.testsuite.login;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,7 @@ public class Signin extends BaseSetup{
 	SigninPage signpg;
 	ConfigManager config=new ConfigManager();
 	
-	@BeforeMethod
+	@BeforeClass
 	public void methodSetup(){
 		AuthLoginPage authlpg=new AuthLoginPage(getDriver());
 		getDriver().get(new ConfigManager().getProperty("Url"));

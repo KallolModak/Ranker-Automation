@@ -4,7 +4,8 @@ test-output
 build
 buildlogs
 *.metadata
-*.log
 **/Automation Reports/
 **/test-output/
 *.settings
+*.log
+log.log
