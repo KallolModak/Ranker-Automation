@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.paeobjects.home.Commonpage;
+import com.pageobject.search.SearchRanker;
 
 public class NavBar extends Commonpage{
 	
@@ -103,6 +104,34 @@ public class NavBar extends Commonpage{
 		return By.xpath("//div[@id='siteNavMoreSub']//a");
 	}
 	
+	private By faq(){
+		return By.xpath("//span[text()=' frequently asked questions']");
+	}
+	
+	private By contactUs(){
+		return By.xpath("//span[text()=' contact us']");
+	}
+	
+	private By forms(){
+		return By.xpath("//span[text()=' forums']");
+	}
+	
+	private By topRankers(){
+		return By.xpath("//span[text()=' top rankers']");
+	}
+	
+	private By listopedia(){
+		return By.xpath("//span[text()=' listopedia']");
+	}
+	
+	private By embedList(){
+		return By.xpath("//span[text()=' embed a list']");
+	}
+	
+	private By searchBtn(){
+		return By.xpath("//span[@class='relative block icon search grey']");
+	}
+	
 	
 	/******************************Safe operations**************************/
 	public New clickNew(){
@@ -164,6 +193,10 @@ public class NavBar extends Commonpage{
 	
 	public void hoverMore(){
 		mouseHover(more(), MEDIUMWAIT);
+	}
+	
+	public boolean verifyMoreOverlay(){
+		return driver.findElement(more()).getAttribute("class").equals("block active");
 	}
 	
 	public boolean verifyOverlay(){
@@ -255,4 +288,34 @@ public class NavBar extends Commonpage{
 	public int cctlinksCount(){
 		return driver.findElements(cctLinks()).size();
 	}
+	
+	public boolean verifyFAQPresent(){
+		return isElementPresent(faq());
+	}
+	
+	public boolean verifyContactus(){
+		return isElementPresent(contactUs());
+	}
+	
+	public boolean verifyForms(){
+		return isElementPresent(forms());
+	}
+	
+	public boolean verifyTopRankers(){
+		return isElementPresent(topRankers());
+	}
+	
+	public boolean verifylistopedia(){
+		return isElementPresent(listopedia());
+	}
+	
+	public boolean verifyembedList(){
+		return isElementPresent(embedList());
+	}
+	
+	public SearchRanker clickOnsearch(){
+		safeClick(searchBtn());
+		return new SearchRanker(driver);
+	}
+	
 }

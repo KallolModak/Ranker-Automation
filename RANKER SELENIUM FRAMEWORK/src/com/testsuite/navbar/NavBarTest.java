@@ -16,6 +16,7 @@ import com.paeobjects.navbar.Sports;
 import com.paeobjects.navbar.TV;
 import com.paeobjects.navbar.Videos;
 import com.pageobject.login.AuthLoginPage;
+import com.pageobject.search.SearchRanker;
 
 public class NavBarTest extends BaseSetup{
 
@@ -344,14 +345,20 @@ public class NavBarTest extends BaseSetup{
 		Assert.assertEquals(videos.getCurrentURL(),config.getProperty("Url")+"videos");
 	}
 	
-//	@Test(priority=14)
+	@Test(priority=14)
 	public void More_hover() {
 		NavBar navbar=new NavBar(getDriver());
 		navbar.hoverMore();
-		Assert.assertTrue(navbar.verifyoverlayblockActive(14),"more");
 		Assert.assertEquals(navbar.cctlinksCount(), 28, "category/class/tag links");
-		
-	}
+		Assert.assertTrue(navbar.verifySeeAlltopics(),"see all topics");
+		Assert.assertTrue(navbar.verifyFAQPresent(),"Frequently asked questions");
+		Assert.assertTrue(navbar.verifyContactus(),"Contact us");
+		Assert.assertTrue(navbar.verifyForms(),"Forms");
+		Assert.assertTrue(navbar.verifyTopRankers(),"Top Rankers");
+		Assert.assertTrue(navbar.verifylistopedia(), "listopedia");
+		Assert.assertTrue(navbar.verifyembedList(), "Embed List");
+		Assert.assertTrue(navbar.verifyMoreOverlay(), "more");
+	} 
 	
 //	@Test(priority=15)
 	public void More_link() {
@@ -360,6 +367,13 @@ public class NavBarTest extends BaseSetup{
 		Assert.assertTrue(navbar.verifyoverlayblockActive(14),"more");
 		Assert.assertEquals(navbar.cctlinksCount(), 28, "category/class/tag links");
 		
+		
+	}
+	
+//	@Test(priority=16)
+	public void SearchBar_emptysearch(){
+		NavBar navbar=new NavBar(getDriver());
+		SearchRanker search=navbar.clickOnsearch();
 	}
 	
 }
